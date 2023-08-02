@@ -1,11 +1,8 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
+import NavBar from '@/Components/NavBar/Index'
 import Logo from '@/Images/logo.svg'
-import SingIn from '@/Components/Forms/LoginIn'
-import SingUp from '@/Components/Forms/LoginUp'
-import IconMenu from '@/Images/menu.svg'
-import IconClose from '@/Images/buttonclose.svg'
 import ArrowLeft from '@/Images/arrowRight.svg'
 import ImageBottom from '@/Images/mask.svg'
 import CardInfo from '@/Components/CardInfo/Index'
@@ -15,75 +12,12 @@ import Chart from '@/Images/chart.svg'
 import Descktop from '@/Images/desktopmob.svg'
 import TopCrypto from '@/Components/TopCrypto/Index'
 import Carrousel from '@/Components/Carrousel.tsx/Index'
-import Quote from '@/Components/Quote'
 
 const page = () => {
-  const [menu, setMenu] = useState<Boolean>(false)
-
-  const [isModalOpenSingIn, setIsModalOpenSingIn] = useState(false)
-  const [isModalOpenSingUp, setIsModalOpenSingUp] = useState(false)
-
-  const handleOpenModalSingIn = () => {
-    setIsModalOpenSingIn(true)
-  }
-  const handleOpenModalSingUp = () => {
-    setIsModalOpenSingUp(true)
-  }
-
   return (
     <>
       <header className="container_header global_content">
-        <nav>
-          <div className="container-logo">
-            <Image src={Logo} alt="Logo da landpge: coinsynch" />
-            <ul>
-              <li>About us</li>
-              <li>Top Cryptos</li>
-            </ul>
-          </div>
-          <div className="container_quotes24hrs global_content">
-            <Quote />
-          </div>
-          <div className="container-login">
-            <SingIn
-              isModalOpen={isModalOpenSingIn}
-              handleOpenModal={handleOpenModalSingIn}
-              setIsModalOpen={setIsModalOpenSingIn}
-              isModalOpenSingUp={isModalOpenSingUp}
-              handleOpenModalSingUp={handleOpenModalSingUp}
-            />
-            <SingUp
-              isModalOpen={isModalOpenSingUp}
-              handleOpenModal={handleOpenModalSingUp}
-              setIsModalOpen={setIsModalOpenSingUp}
-            />
-          </div>
-          <button className="menu_mobile" onClick={() => setMenu(true)}>
-            <Image src={IconMenu} alt="" />
-          </button>
-          {menu === true &&
-            isModalOpenSingIn === false &&
-            isModalOpenSingUp === false && (
-              <div className="box_menu-button">
-                <SingIn
-                  isModalOpen={isModalOpenSingIn}
-                  handleOpenModal={handleOpenModalSingIn}
-                  setIsModalOpen={setIsModalOpenSingIn}
-                />
-                <SingUp
-                  isModalOpen={isModalOpenSingUp}
-                  handleOpenModal={handleOpenModalSingUp}
-                  setIsModalOpen={setIsModalOpenSingUp}
-                />
-                <span onClick={() => setMenu(!true)}>
-                  <Image src={IconClose} alt="" />
-                </span>
-              </div>
-            )}
-        </nav>
-        <div className="container_quotes24hrs-mobile">
-          <Quote />
-        </div>
+        <NavBar />
       </header>
       <main className="card_main">
         <section className="global_content">
