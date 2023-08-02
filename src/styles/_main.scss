@@ -1,0 +1,357 @@
+.card_main {
+  overflow: hidden;
+}
+
+.section_marketing {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  align-items: center;
+  gap: 10rem;
+}
+
+.section_marketing div:nth-child(1) {
+  width: 100%;
+  max-width: 600px;
+  h1 {
+    color: #fbab34;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 278px;
+    padding: 14px 24px;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    li {
+      background-color: #fff6e8;
+      color: #fbab34;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.section_marketing div:nth-child(2) {
+  width: 100%;
+}
+
+.card_carrousel {
+  margin-right: -11.4rem;
+  padding: 2rem;
+}
+
+.card_carrosel {
+  width: 100%;
+  max-width: 650px;
+  margin-right: -9.3rem;
+}
+
+.card_carrosel img {
+  width: 100%;
+  height: 100%;
+}
+
+.image_bottom-card {
+  width: 100%;
+  height: 247px;
+  margin-bottom: 10rem;
+}
+
+.image_bottom-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.background {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f7f7f7 100%);
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section_info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.box {
+  width: 100%;
+  max-width: 696px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box div {
+  margin-bottom: 1rem;
+}
+.box div img {
+  margin-bottom: 10px;
+}
+
+.box div h5 {
+  margin-bottom: 10px;
+}
+
+.box div h4 {
+  margin-bottom: 1rem;
+}
+
+.container_info {
+  h5 {
+    color: $orange-500;
+  }
+  h4,
+  p {
+    color: $text-base;
+  }
+}
+
+.card-one {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.card-two {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+
+.box_info {
+  width: 100%;
+  height: 100%;
+  max-width: 280px;
+  min-height: 268px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 12px 24px 0px #0000000d;
+  padding: 1rem;
+}
+
+.card_text h5 {
+  color: #fbab34;
+  margin-bottom: 1rem;
+}
+
+.card_text h2 {
+  color: #5d6670;
+  margin-bottom: 1rem;
+}
+
+.card_text p {
+  color: #5d6670;
+  margin-bottom: 3rem;
+}
+
+.card_text button {
+  width: 100%;
+  max-width: 176px;
+  padding: 14px 24px;
+}
+
+.card_top-crypptos-wed {
+  margin-bottom: 5rem;
+}
+
+.card_top-crypptos-wed button {
+  background-color: transparent;
+  color: #fbab34;
+  border: none;
+  display: flex;
+  margin: auto;
+}
+
+.container_top-cryptos {
+  padding: 10px;
+}
+
+.container_top-cryptos h3 {
+  color: #5d6670;
+  text-align: center;
+}
+
+.card_top-cryptos {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.card_top-cryptos thead tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_top-cryptos thead tr th {
+  padding: 1rem;
+  text-align: start;
+  color: #8c8a97;
+}
+.card_top-cryptos tbody tr {
+  color: #5d6670;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f6f6f6;
+  }
+}
+
+.card_top-cryptos tbody tr td {
+  padding: 1rem;
+}
+
+.card_top-cryptos tbody tr button {
+  width: 80px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 32px;
+  background-color: #149e55;
+  color: #fff;
+  border: none;
+  animation: ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4e4b59;
+  }
+}
+
+.red {
+  color: #a12226;
+}
+
+.gren {
+  color: #149e55;
+}
+
+.card_top-crypptos-mobile {
+  display: none;
+}
+
+// mobile
+@media (max-width: 750px) {
+  .card_top-cryptos button {
+    background-color: transparent;
+    border: none;
+    color: #fbab34;
+  }
+
+  .card_top-crypptos-wed {
+    display: none;
+  }
+
+  .card_top-crypptos-wed table {
+    display: none;
+  }
+
+  .card_top-crypptos-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card_top-crypptos-mobile tbody tr td {
+    display: flex;
+    gap: 10px;
+  }
+
+  .card_top-crypptos-mobile tbody tr button {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .section_marketing div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .section_marketing div:nth-child(2) {
+    display: none;
+  }
+
+  .section_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card_text {
+    grid-area: 1;
+    padding: 1rem;
+  }
+
+  .box {
+    max-width: 100%;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    padding: 10px;
+    overflow-x: scroll;
+    // background-color: yellow;
+  }
+
+  .container_info {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    overflow: scroll;
+    gap: 2rem;
+  }
+
+  .box_info {
+    width: 500px;
+  }
+
+  .box_info img {
+    margin-bottom: -25px;
+  }
+
+  .box_info h5 {
+    margin-bottom: -10px;
+  }
+
+  .box_info h4 {
+    margin-bottom: -5px;
+  }
+
+  .background {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+}

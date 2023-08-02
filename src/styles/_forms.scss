@@ -1,0 +1,208 @@
+.form_sing-in,
+.form_sing-up {
+  position: relative;
+  width: 300px;
+  text-align: center;
+
+  h4 {
+    color: $text-base;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
+    span:nth-child(1) {
+      color: $orange-500;
+      font-weight: bold;
+    }
+    span:nth-child(2) {
+      color: $gray-500;
+      font-weight: bold;
+    }
+  }
+}
+
+.form_sing-in {
+  div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      width: 100%;
+      font-size: 12px;
+      color: $gray-500;
+      text-align: end;
+      margin-bottom: 1rem;
+    }
+  }
+
+  div:nth-child(2) {
+    width: 100%;
+
+    button:nth-child(1) {
+      width: 100%;
+      background-color: $orange-500;
+      padding: 14px 24px;
+      margin-bottom: 1rem;
+      &:hover {
+        background-color: $orange-600;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+
+    button:nth-child(2) {
+      background-color: transparent;
+      border: none;
+      margin: auto;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      color: $text-base;
+
+      span:nth-child(1) {
+        color: $text-base;
+      }
+      span:nth-child(2) {
+        color: $orange-500;
+      }
+      span:nth-child(3) {
+        color: $gray-500;
+      }
+    }
+  }
+}
+
+.form_sing-up {
+  div:nth-child(1) {
+    text-align: center;
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  div:nth-child(2) {
+    width: 100%;
+    button {
+      width: 100%;
+      background-color: $orange-500;
+      padding: 14px 24px;
+      margin-bottom: 1rem;
+      &:hover {
+        background-color: $orange-600;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      color: $text-base;
+
+      span:nth-child(1) {
+        color: $text-base;
+      }
+      span:nth-child(2) {
+        color: $orange-500;
+      }
+      span:nth-child(3) {
+        color: $gray-500;
+      }
+    }
+  }
+}
+
+.close {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+}
+
+.input_password {
+  position: relative;
+  width: 100%;
+
+  input {
+    width: 100%;
+    padding-left: 1.8rem;
+    background-image: url(../Images/look.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+  }
+
+  button {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.card_input {
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.4rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    color: $gray-500;
+    border: 1px solid $gray-300;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    outline: none;
+  }
+}
+
+.chackbox-terms {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: $text-base;
+
+  input {
+    width: 15px;
+    height: 15px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0.8rem;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+//  tablet
+// @media (max-width: 768px) {
+//   .form_sing-in,
+//   .form_sing-up {
+//     width: 320px;
+//   }
+// }
+
+// // mobile
+// @media (max-width: 550px) {
+//   .form_sing-in,
+//   .form_sing-up {
+//     width: 272px;
+//   }
+// }

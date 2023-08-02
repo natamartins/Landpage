@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Natã",
+      "email": "nata@gmail.com",
+      "password": "$2b$10$9hELF8KzRvU7TdsIJyTH0e1.f.Tt6ilPC86FzFXnrhqhVN29li2mW"
+    }
+  ]
+}
