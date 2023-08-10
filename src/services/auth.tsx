@@ -11,7 +11,7 @@ export async function singInRequest(data: SignInRequestDate) {
     token: uuid(),
     user: {
       name: 'Natã Martins',
-      email: 'NataMartins@gmal.com',
+      email: 'NataMartins@gmail.com',
       avatar_url: 'https://github.com/natamartins.png'
     }
   }
