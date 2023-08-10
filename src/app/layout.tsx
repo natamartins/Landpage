@@ -1,7 +1,7 @@
 import '../styles/styles.scss'
 import type { Metadata } from 'next'
-// import { AuthProvider } from '@/Contexts/authContext'
 import { Roboto } from 'next/font/google'
+import { AuthProvider } from '@/contexts/AuthContext'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -21,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={roboto.className}>
-        {/* <AuthProvider> */}
-        {children}
-        {/* </AuthProvider> */}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   )

@@ -1,13 +1,14 @@
 'use client'
-import React, { useState } from 'react'
-import Modal from '@/Components/Modal'
+import React, { useContext } from 'react'
 import Link from 'next/link'
-import { InputPassword } from './InputPassword'
 import Image from 'next/image'
-import IconClose from '@/Images/buttonclose.svg'
+import { useForm, Controller } from 'react-hook-form'
+import { InputPassword } from './InputPassword'
 import Input from './Input'
+import Modal from '@/Components/Modal'
+import IconClose from '@/Images/buttonclose.svg'
 import IconEmail from '@/Images/icon-email.svg'
-// import axios from 'axios'
+import { AuthContext } from '@/contexts/AuthContext'
 
 const LoginIn = ({
   isModalOpen,
@@ -16,18 +17,16 @@ const LoginIn = ({
   isModalOpenSingUp,
   handleOpenModalSingUp
 }: any) => {
-  // const [email, setEmail] = useState('')
-  // const [password, setPassword] = useState('')
+  const { register, handleSubmit, control } = useForm()
+  const { singIn, user } = useContext(AuthContext)
 
-  // const handleSignIn = async () => {
-  //   try {
-  //     const response = await axios.post('/api/users', { email, password })
-  //     console.log('User ==>', response)
-  //     // alert(response.data.message)
-  //   } catch (error) {
-  //     alert('Email ou senha incorretos')
-  //   }
-  // }
+  async function handleLogin(data: any) {
+    try {
+      await singIn(data)
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   return (
     <>
@@ -42,33 +41,23 @@ const LoginIn = ({
               Sing in to <span>Coin</span>
               <span>Synck</span>
             </h4>
-            {/* <form onSubmit={handleSignIn}> */}
-            <form>
+            <form onSubmit={handleSubmit(handleLogin)}>
               <div>
-                <Input
-                  placeholder="Email"
-                  Icon={IconEmail}
-                  // value={email}
-                  // setEmail={setEmail}
+                <Controller
+                  name="email"
+                  control={control}
+                  render={({ field }) => (
+                    <Input Icon={IconEmail} field={field} />
+                  )}
                 />
-                <InputPassword
-                  placeholder="Password"
-                  // value={password}
-                  // setPassword={setPassword}
-                />
+                <InputPassword {...register('password')} />
 
                 <Link href="/">Forget password?</Link>
               </div>
               <div>
                 <button className="button" type="submit">
-                  <Link
-                    href="https://dashboard-silk-zeta.vercel.app/"
-                    target="_blank"
-                  >
-                    Sing in
-                  </Link>
+                  Sing in
                 </button>
-
                 <button onClick={() => handleOpenModalSingUp(true)}>
                   <span>Sing Up to</span> <span>Coin</span>
                   <span>Synch</span>
