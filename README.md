@@ -3,7 +3,7 @@
   💲Coin Synch
 </h1>
     
-<h2 id="project">📁 Teste Prático da Stone </h2>
+<h2 id="project">📁 Teste Prático</h2>
 <p> Esse é  mais um desafio técnico que achei aqui no linkedin livre!
 Um site simples onde a página inicial contém algumas informações da empresa, os textos são estáticos, nada verdadeiro. Mas a ideia do site é conter informações de criptomoedas.
 </p>
