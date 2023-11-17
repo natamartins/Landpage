@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🔰 Natã Martins 
+<h1 align="center" style="text-align: center;">
+  💲Coin Synch
+</h1>
+    
+<h2 id="project">📁 Teste Prático da Stone </h2>
+<p> Esse é  mais um desafio técnico que achei aqui no linkedin livre!
+Um site simples onde a página inicial contém algumas informações da empresa, os textos são estáticos, nada verdadeiro. Mas a ideia do site é conter informações de criptomoedas.
+</p>
+<p>Ao fazer login, você é direcionado para um dashboard, onde contém sua carteira, moedas e algumas informações adicionais!</p>
+<p>O Dashboard não é totalmente funcional, mas é possível acessá-lo para ver como está.
+No login, digite apenas o email:
+</p>
+-  NataMartins@gmail.com
+<p>é você será direcionado(a) ao dashboard.</p>
+<p>A parte de criar usuario não funciona!</p>
 
-## Getting Started
+> Fique à vontade para contribuir neste projeto! Lembre-se que a prática leva a perfeição.
 
-First, run the development server:
+<h2 id="tecnology">💻 Tecnologias</h2>
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- Next.JS
+- TypeScript
+- Zood
+- Sass
+- NextAuth
+  
+<h2>Boas práticas </h2>
+
+- Hooks
+- react-hook-form
+- Clean Code
+- Web Responsive
+
+<h2 id="usage">🎯 Utilização</h2>
+
+A aplicação está disponível para uso [aqui](https://landpage-sigma.vercel.app/). Você também pode executá-la em sua máquina localmente. Certifique-se de ter o `Node.js` e o `yarn` instalados antes de prosseguir com as etapas abaixo:
+
+1. Clone o projeto:
+
+```
+$ git clone https://github.com/natamartins/Landpage.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. No seu terminal, acesse a pasta do projeto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+$ cd Landpage
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Instale as dependências:
 
-## Learn More
+```
+$ yarn install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Inicie o projeto:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+$ yarn  dev
+```
+## rede social
+<div style="display: flex;">
+  <a href="https://www.linkedin.com/in/nata-martins/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="margin-right: 2vw" target="_blank"></a>
+</div>
