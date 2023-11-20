@@ -4,21 +4,21 @@
 </h1>
     
 <h2 id="project">📁 Teste Prático</h2>
-<p> Esse é  mais um desafio técnico que achei aqui no linkedin livre!
-Um site simples onde a página inicial contém algumas informações da empresa, os textos são estáticos, nada verdadeiro. Mas a ideia do site é conter informações de criptomoedas.
+<p> This is another technical challenge that I found here on free LinkedIn!
+A simple website where the home page contains some company information, the texts are static, nothing real. But the idea of the site is to contain information about cryptocurrencies.
 </p>
-<p>Ao fazer login, você é direcionado para um dashboard, onde contém sua carteira, moedas e algumas informações adicionais!</p>
-<p>O Dashboard não é totalmente funcional, mas é possível acessá-lo para ver como está.
-No login, digite apenas o email:
+<p>When logging in, you are directed to a dashboard, which contains your wallet, coins and some additional information!</p>
+<p>The Dashboard is not fully functional, but you can access it to see how it is doing.
+When logging in, just enter your email:
 </p>
 -  NataMartins@gmail.com
-<p>é você será direcionado(a) ao dashboard.</p>
-<p>A parte de criar usuario não funciona!</p>
+<p>you will be directed to the dashboard.</p>
+<p>The create user part doesn't work!</p>
 
-> Fique à vontade para contribuir neste projeto! Lembre-se que a prática leva a perfeição.
+> Feel free to contribute to this project! Remember that practice makes perfect.
 
-<h2 id="tecnology">💻 Tecnologias</h2>
-Este projeto foi desenvolvido com as seguintes tecnologias:
+<h2 id="tecnology">💻 technology</h2>
+This project was developed with the following technologies:
 
 - Next.JS
 - TypeScript
@@ -26,41 +26,41 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - Sass
 - NextAuth
   
-<h2>Boas práticas </h2>
+<h2>Good habits</h2>
 
 - Hooks
 - react-hook-form
 - Clean Code
 - Web Responsive
 
-<h2 id="usage">🎯 Utilização</h2>
+<h2 id="usage">🎯 Use</h2>
 
-A aplicação está disponível para uso [aqui](https://landpage-sigma.vercel.app/). Você também pode executá-la em sua máquina localmente. Certifique-se de ter o `Node.js` e o `yarn` instalados antes de prosseguir com as etapas abaixo:
+The application is available for use [aqui](https://landpage-sigma.vercel.app/). You can also run it on your machine locally. Make sure you have `Node.js` and `yarn` installed before proceeding with the steps below:
 
-1. Clone o projeto:
+1. Clone  the project:
 
 ```
 $ git clone https://github.com/natamartins/Landpage.git
 ```
 
-2. No seu terminal, acesse a pasta do projeto:
+2. In your termi, access the project folder:
 
 ```
 $ cd Landpage
 ```
 
-3. Instale as dependências:
+3. Install dependencies
 
 ```
 $ yarn install
 ```
 
-4. Inicie o projeto:
+4. Start the project:
 
 ```
 $ yarn  dev
 ```
-## rede social
+## Socia network
 <div style="display: flex;">
   <a href="https://www.linkedin.com/in/nata-martins/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="margin-right: 2vw" target="_blank"></a>
 </div>
